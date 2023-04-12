@@ -6,5 +6,23 @@ def main(data:str):
     Returns:
         list: return answer
     """
+    a=open("txt_file/data05.txt",mode="r")
+    b=a.read()
+    d=[]
+    f=0
+    k=0
+    p=[]
+    for c in b:
+        if c.isdigit():
+            # d+=list(c)
+            k+=1
+            l=int(c)
+            if f<l:
+                f=l
     
-# Read data from file
+    g=f+k
+    p.append(k)
+    p.append(g)
+    return p
+print(main("salom"))
+# Read data from filei
